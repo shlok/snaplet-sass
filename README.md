@@ -1,3 +1,5 @@
+**Note**: [shlok](https://github.com/shlok) forked this for use in personal projects. Use at your own risk.
+
 snaplet-sass
 ===========
 
