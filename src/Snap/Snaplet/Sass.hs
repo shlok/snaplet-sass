@@ -96,5 +96,5 @@ compileAll cfg = liftIO $ compile >> return ()
     verboseLog = verbosePut cfg $ "compiling " ++ srcDir cfg
     args = ["--update", ioDirs, "--style", st] ++ sm
     ioDirs = srcDir cfg ++ ":" ++ destDir cfg
-    sm = if sourcemap cfg then ["--sourcemap"] else []
+    sm = [] -- if sourcemap cfg then ["--sourcemap"] else []
     st = map toLower . show $ style cfg
